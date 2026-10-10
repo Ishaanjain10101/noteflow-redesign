@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("partials/head") %>
+<link rel="stylesheet" href="/stylesheets/main.css">
+<link rel="stylesheet" href="/stylesheets/editor.css">
+</head>
+<body>
+    <%- include("partials/loggedin") %>
+    <div class="editor-wrapper">
+        <div id="container-note" data-id="<%=noteId%>">
+            <div id="name">View Note</div>
+            <input type="text" id="title" value="<%=title%>" disabled>
+            <textarea name="content" id="content" disabled><%=content%></textarea>
+        </div>
+    </div>
+    <dialog id="incomplete-data">Please fill in both the title and the content</dialog>
+    <script src="/scripts/viewMoreTrash.js"></script>
+</body>
+</html>
