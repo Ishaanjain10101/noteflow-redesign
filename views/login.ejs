@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("partials/head") %>
+<link rel="stylesheet" href="/stylesheets/auth.css">
+</head>
+<body>
+<div class="auth-wrapper">
+    <div class="auth-card">
+        <div class="auth-logo">
+            <a href="/"><i class="fa-solid fa-feather-pointed"></i> NoteFlow</a>
+        </div>
+        <div class="ball"><i class="fa-solid fa-lock" id="lock"></i></div>
+        <div id="heading">Welcome Back</div>
+        <div class="auth-subtitle">Log in to your account</div>
+        <div>
+            <div class="auth-field">
+                <label for="email-input">Email</label>
+                <input type="email" id="email-input" autocomplete="username" required>
+            </div>
+            <div class="auth-field auth-field-password">
+                <label for="password-input">Password</label>
+                <input type="password" id="password-input" autocomplete="current-password" required>
+                <i class="fa-solid fa-eye-slash" id="eye"></i>
+            </div>
+        </div>
+        <button id="button-login">Log in</button>
+        <div id="asking">Don't have an account? <a href="/signup">Sign Up</a></div>
+    </div>
+</div>
+<script src="/scripts/login.js"></script>
+</body>
+</html>
